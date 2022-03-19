@@ -13,7 +13,7 @@ refs.gallery.addEventListener('click', onGalleryClick);
 
 let onKeypressEvent = function(event) {
     event.preventDefault();
-    if (event.code === 'Enter') blInstance.close(() => document.removeEventListener('keydown', onKeypressEvent));
+    if (event.code === 'Escape') blInstance.close(() => document.removeEventListener('keydown', onKeypressEvent));
 }
 
 function onGalleryClick(e) {
